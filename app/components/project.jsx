@@ -24,6 +24,7 @@ const projects = [
       "LangGraph",
       "LangChain",
       "Tavily",
+      "TS",
       "Supervisor Agent",
       "AI Agents",
     ],
@@ -35,7 +36,7 @@ const projects = [
     image: "/project-3.png",
     description:
       "A React-based image editing application that leverages AI to enhance and modify images with ease. Users can upload their photos and utilize various AI-powered tools to apply filters, adjust colors, remove backgrounds, and perform other edits seamlessly. The application provides an intuitive interface for users to enhance their images effortlessly.",
-    tags: ["NEXT JS", "GOOGLE API", "AI Image Editing"],
+    tags: ["NEXT JS", "GOOGLE API", "AI Image Editing", "TS"],
     live: "https://image-ai-meoy.vercel.app",
     source: "https://github.com/sagorsaha00/Image-ai",
   },

@@ -5,31 +5,39 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    image: "/project-1.jpg",
+    title: "TiLES BD",
+    image: "/project-1.png",
     description:
       "A modern responsive portfolio website with animation, skill showcase, projects, and contact section.",
     tags: ["Next.js", "React", "Tailwind CSS"],
-    live: "#",
-    source: "#",
+    live: "https://tiels.vercel.app",
+    source: "https://github.com/sagorsaha00/Tiels",
   },
   {
-    title: "MERN Dashboard",
-    image: "/project-2.jpg",
+    title: "Wallet TRack",
+    image: "/project-2.png",
     description:
-      "A dashboard-style practice project using React components, charts, protected routes, and clean UI.",
-    tags: ["React", "Node.js", "MongoDB"],
-    live: "#",
-    source: "#",
+      "A React.js-based AI dashboard that uses LangGraph, LangChain, and Tavily to fetch real-time data. The system includes a supervisor agent that understands user input, groups tasks, and routes them to specialized AI agents for accurate and intelligent responses.",
+
+    tags: [
+      "React.js",
+      "LangGraph",
+      "LangChain",
+      "Tavily",
+      "Supervisor Agent",
+      "AI Agents",
+    ],
+    live: "https://expense-tracker-client-server.vercel.app",
+    source: "https://github.com/sagorsaha00/expense_tracker_client_server",
   },
   {
-    title: "Authentication App",
-    image: "/project-3.jpg",
+    title: "AI Image EDIT",
+    image: "/project-3.png",
     description:
-      "A login/register system with Firebase authentication and protected user pages.",
-    tags: ["React", "Firebase", "Tailwind"],
-    live: "#",
-    source: "#",
+      "A React-based image editing application that leverages AI to enhance and modify images with ease. Users can upload their photos and utilize various AI-powered tools to apply filters, adjust colors, remove backgrounds, and perform other edits seamlessly. The application provides an intuitive interface for users to enhance their images effortlessly.",
+    tags: ["NEXT JS", "GOOGLE API", "AI Image Editing"],
+    live: "https://image-ai-meoy.vercel.app",
+    source: "https://github.com/sagorsaha00/Image-ai",
   },
 ];
 

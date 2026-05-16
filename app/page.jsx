@@ -75,7 +75,7 @@ function HeroSection() {
   return (
     <section
       id="about"
-      className="min-h-screen bg-[#0f0303] px-3 pb-16 pt-28 md:px-5"
+      className=" bg-[#0f0303] px-3 pb-16 pt-28 md:px-5"
     >
       <animated.div
         style={{

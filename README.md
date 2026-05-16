@@ -26,6 +26,7 @@ I enjoy solving real-world problems with clean code and modern technologies.
 
 * React.js
 * Next.js
+* Shadcn Ui,ant Design,
 * Tailwind CSS
 * JavaScript (ES6+)
 * HTML5
@@ -48,6 +49,8 @@ I enjoy solving real-world problems with clean code and modern technologies.
 * Git & GitHub
 * VS Code
 
+## APP DEVELOPEMNT
+ * REACT NATIVE
 ---
 
 # 🚀 Featured Projects

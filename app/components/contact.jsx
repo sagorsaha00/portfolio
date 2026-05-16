@@ -7,19 +7,19 @@ const socials = [
   {
     name: "WhatsApp",
     icon: FaWhatsapp,
-    href: "https://wa.me/8801234567890",
+    href: "https://wa.me/8801857681366",
     color: "hover:text-green-500",
   },
   {
     name: "Facebook",
     icon: FaFacebookF,
-    href: "https://facebook.com",
+    href: "https://facebook.com/sagor.saha.55",
     color: "hover:text-blue-500",
   },
   {
     name: "LinkedIn",
     icon: FaLinkedinIn,
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/in/sagor-saha00",
     color: "hover:text-cyan-400",
   },
 ];

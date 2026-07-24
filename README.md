@@ -76,9 +76,9 @@ Complete MERN eCommerce platform with authentication and payment integration.
 
 # 🌍 Connect With Me
 
-* 💼 LinkedIn:
-* 🌐 Portfolio: https://yourportfolio.com
-* 📧 Email: [mrartimas24@email.com]
+* 💼 LinkedIn:https://www.linkedin.com/in/sagor-saha00/
+* 🌐 Portfolio:https://sagor-saha.vercel.app/
+* 📧 Email: [sagorsaha.dev@gmail.com]
 * 🐙 GitHub:  https://github.com/sagorsaha00/
 
 ---

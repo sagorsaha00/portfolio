@@ -1,0 +1,80 @@
+[
+    {
+        "id": "wallet-track",
+        "title": "Wallet Track",
+        "image": "/image1.png",
+        "description": "A modern AI-powered expense tracking application built with React.js. It uses LangGraph, LangChain, and Tavily to provide real-time insights. The application uses a Supervisor Agent to understand user requests, assign tasks to AI agents, and deliver accurate financial assistance.",
+        "tags": [
+            "React.js",
+            "TypeScript",
+            "LangGraph",
+            "LangChain",
+            "Tavily",
+            "AI Agents"
+        ],
+        "technologies": [
+            "React.js",
+            "TypeScript",
+            "LangGraph",
+            "LangChain",
+            "Tavily API",
+            "Tailwind CSS"
+        ],
+        "live": "https://expense-tracker-client-server.vercel.app",
+        "source": "https://github.com/sagorsaha00/expense_tracker_client_server",
+        "challenges": "Building a multi-agent workflow, managing AI communication, and handling real-time responses efficiently.",
+        "futurePlans": "Add user authentication, expense analytics, budgeting tools, and AI-powered financial recommendations."
+    },
+    {
+        "id": "kothon-ai",
+        "title": "Kothon AI",
+        "image": "/image2.png",
+        "description": "Kothon AI is an AI-powered language learning platform that helps users improve their speaking and communication skills through interactive conversations. It uses Google's Gemini API with LangGraph and LangChain to generate intelligent and context-aware responses.",
+        "tags": [
+            "Next.js",
+            "TypeScript",
+            "Gemini API",
+            "LangGraph",
+            "LangChain",
+            "Tailwind CSS"
+        ],
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Gemini API",
+            "LangGraph",
+            "LangChain",
+            "Tailwind CSS"
+        ],
+        "live": "https://kohton-ai.vercel.app/",
+        "source": "https://github.com/sagorsaha00/kohton-ai",
+        "challenges": "Managing conversation history, integrating the Gemini API, and creating a smooth real-time chat experience.",
+        "futurePlans": "Add voice chat, multilingual support, personalized learning paths, pronunciation analysis, and progress tracking."
+    },
+    {
+        "id": "elebooks",
+        "title": "EleBooks",
+        "image": "/image3.png",
+        "description": "EleBooks is a role-based online book management system built with Next.js. It supports three user roles: Admin, Librarian, and User. Librarians can upload books, users can read and request books, and librarians approve book requests before delivery. Admins manage users, publish or unpublish books, approve uploaded books, delete books, and assign user roles.",
+        "tags": [
+            "Next.js",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT"
+        ],
+        "technologies": [
+            "Next.js",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT Authentication"
+        ],
+        "live": "https://ele-books.vercel.app/",
+        "source": "https://github.com/sagorsaha00/Book_appoitment_backend_Server",
+        "challenges": "Building role-based authentication, managing permissions for different users, and implementing the complete book approval workflow.",
+        "futurePlans": "Add online payments, email notifications, book reviews, advanced search filters, and an AI-based book recommendation system."
+    }
+]

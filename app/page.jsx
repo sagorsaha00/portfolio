@@ -1,11 +1,8 @@
 "use client";
 
-import React, { useCallback, useEffect, useRef, useState } from "react";
-
+import React, { useEffect, useState } from "react";
 import { animated, config, useSpring, useTransition } from "@react-spring/web";
-
-import { FaPaperPlane, FaWhatsapp } from "react-icons/fa";
-import { IoClose, IoChatbubbleEllipses } from "react-icons/io5";
+import { FaDownload } from "react-icons/fa";
 
 import ExperienceTimeline from "./components/experinece";
 import SkillCard from "./components/showSkill";
@@ -80,7 +77,7 @@ function HeroSection() {
           opacity: hero.opacity,
           transform: hero.y.to((y) => `translateY(${y}px)`),
         }}
-        className="mx-auto max-w-7xl overflow-hidden rounded-[40px] border border-white/10 bg-[#140707] shadow-[0_20px_80px_rgba(0,0,0,0.45)]"
+        className="mx-auto w-[92%] max-w-6xl overflow-hidden rounded-[40px] border border-white/10 bg-[#140707] shadow-[0_20px_80px_rgba(0,0,0,0.45)] md:w-[80%]"
       >
         {/* COVER */}
         <div className="relative h-[260px] overflow-hidden md:h-[340px]">
@@ -147,6 +144,19 @@ function HeroSection() {
               TypeScript, Next.js, Node.js, MongoDB, MySQL, Tailwind CSS,
               shadcn/ui, LangChain, OpenAI APIs, and Docker.
             </p>
+
+            {/* CTA */}
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:justify-start">
+              <a
+                href="/Sagor_Saha_Resume.pdf"
+                download
+                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-orange-500 to-red-500 px-7 py-3 text-sm font-bold text-white shadow-[0_8px_30px_-6px_rgba(239,68,68,0.6)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_36px_-6px_rgba(239,68,68,0.75)]"
+              >
+                <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-0" />
+                <FaDownload className="relative z-10 text-xs" />
+                <span className="relative z-10">Download Resume</span>
+              </a>
+            </div>
           </div>
 
           {/* STATS */}
@@ -178,178 +188,6 @@ function HeroSection() {
   );
 }
 
-// function ChatWidget() {
-//   const [open, setOpen] = useState(false);
-//   const [input, setInput] = useState("");
-//   const bottomRef = useRef(null);
-
-//   const [messages, setMessages] = useState([
-//     {
-//       from: "bot",
-//       text: "Hi 👋 I’m Sagor’s portfolio assistant. Ask me about skills, projects, or hiring.",
-//     },
-//   ]);
-
-//   const bubbleSpring = useSpring({
-//     from: { opacity: 0, scale: 0.2, y: 40 },
-//     to: { opacity: 1, scale: 1, y: 0 },
-//     delay: 700,
-//     config: config.wobbly,
-//   });
-
-//   const panelTransition = useTransition(open, {
-//     from: { opacity: 0, y: 35, scale: 0.92 },
-//     enter: { opacity: 1, y: 0, scale: 1 },
-//     leave: { opacity: 0, y: 25, scale: 0.94 },
-//     config: { tension: 260, friction: 22 },
-//   });
-
-//   const send = useCallback(() => {
-//     if (!input.trim()) return;
-
-//     const userText = input.trim();
-//     const msg = userText.toLowerCase();
-
-//     let reply =
-//       "Thanks for your message! You can contact me directly on WhatsApp for a faster reply.";
-
-//     if (msg.includes("hire") || msg.includes("work")) {
-//       reply =
-//         "Yes, I’m open to freelance, internship, and junior developer opportunities.";
-//     }
-
-//     if (msg.includes("skill") || msg.includes("stack")) {
-//       reply =
-//         "I’m learning React, Next.js, JavaScript, TypeScript, Node.js, Express.js, MongoDB, Firebase, and Tailwind CSS.";
-//     }
-
-//     if (msg.includes("project")) {
-//       reply =
-//         "I build practice projects like dashboards, portfolio websites, CRUD apps, authentication systems, and MERN stack projects.";
-//     }
-
-//     setMessages((prev) => [
-//       ...prev,
-//       { from: "user", text: userText },
-//       { from: "bot", text: reply },
-//     ]);
-
-//     setInput("");
-//   }, [input]);
-
-//   useEffect(() => {
-//     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-//   }, [messages, open]);
-
-//   return (
-//     <>
-//       {panelTransition(
-//         (style, item) =>
-//           item && (
-//             <animated.div
-//               style={style}
-//               className="fixed bottom-24 right-4 z-50 w-[calc(100%-2rem)] max-w-[380px] overflow-hidden rounded-[28px] border border-red-500/20 bg-[#130303]/95 text-white shadow-[0_0_60px_rgba(239,68,68,0.25)] backdrop-blur-xl sm:right-6"
-//             >
-//               <div className="relative overflow-hidden border-b border-white/10 bg-gradient-to-br from-red-950 via-black to-black px-5 py-5">
-//                 <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-red-500/20 blur-3xl" />
-
-//                 <div className="relative flex items-center justify-between gap-4">
-//                   <div className="flex items-center gap-3">
-//                     <div className="grid h-12 w-12 place-items-center rounded-2xl bg-red-500 text-xl shadow-[0_0_25px_rgba(239,68,68,0.6)]">
-//                       <IoChatbubbleEllipses />
-//                     </div>
-
-//                     <div>
-//                       <h3 className="font-black leading-none">
-//                         Portfolio Assistant
-//                       </h3>
-//                       <p className="mt-1 flex items-center gap-2 text-xs text-green-300">
-//                         <span className="h-2 w-2 rounded-full bg-green-400" />
-//                         Online now
-//                       </p>
-//                     </div>
-//                   </div>
-
-//                   <button
-//                     onClick={() => setOpen(false)}
-//                     className="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-xl transition hover:bg-red-500"
-//                     aria-label="Close chat"
-//                   >
-//                     <IoClose />
-//                   </button>
-//                 </div>
-//               </div>
-
-//               <div className="max-h-[360px] space-y-4 overflow-y-auto bg-[#0b0101] p-4">
-//                 {messages.map((msg, i) => (
-//                   <div
-//                     key={i}
-//                     className={`flex ${
-//                       msg.from === "user" ? "justify-end" : "justify-start"
-//                     }`}
-//                   >
-//                     <div
-//                       className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm leading-6 shadow-lg ${
-//                         msg.from === "user"
-//                           ? "rounded-br-md bg-red-600 text-white shadow-red-950/40"
-//                           : "rounded-bl-md border border-white/10 bg-white/[0.07] text-slate-200"
-//                       }`}
-//                     >
-//                       {msg.text}
-//                     </div>
-//                   </div>
-//                 ))}
-//                 <div ref={bottomRef} />
-//               </div>
-
-//               <div className="border-t border-white/10 bg-black p-3">
-//                 <div className="flex gap-2">
-//                   <input
-//                     value={input}
-//                     onChange={(e) => setInput(e.target.value)}
-//                     onKeyDown={(e) => e.key === "Enter" && send()}
-//                     placeholder="Type your message..."
-//                     className="min-w-0 flex-1 rounded-full border border-white/10 bg-white/[0.07] px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500 focus:border-red-500/70"
-//                   />
-
-//                   <button
-//                     onClick={send}
-//                     className="grid h-12 w-12 place-items-center rounded-full bg-red-600 text-white transition hover:scale-105 hover:bg-red-500 hover:shadow-[0_0_25px_rgba(239,68,68,0.5)]"
-//                     aria-label="Send message"
-//                   >
-//                     <FaPaperPlane size={16} />
-//                   </button>
-//                 </div>
-
-//                 <a
-//                   href="https://wa.me/8801234567890"
-//                   target="_blank"
-//                   rel="noreferrer"
-//                   className="mt-3 flex items-center justify-center gap-2 rounded-full border border-green-500/30 bg-green-500/10 py-2 text-xs font-bold text-green-300 transition hover:bg-green-500 hover:text-white"
-//                 >
-//                   <FaWhatsapp /> Continue on WhatsApp
-//                 </a>
-//               </div>
-//             </animated.div>
-//           ),
-//       )}
-
-//       <animated.button
-//         style={{
-//           opacity: bubbleSpring.opacity,
-//           transform: bubbleSpring.scale.to((s) => `scale(${s})`),
-//           y: bubbleSpring.y,
-//         }}
-//         onClick={() => setOpen((value) => !value)}
-//         className="fixed bottom-6 right-4 z-50 grid h-16 w-16 place-items-center rounded-full bg-red-600 text-3xl text-white shadow-[0_0_45px_rgba(239,68,68,0.5)] transition hover:scale-110 hover:bg-red-500 sm:right-6"
-//         aria-label="Open chat"
-//       >
-//         {open ? <IoClose /> : <IoChatbubbleEllipses />}
-//       </animated.button>
-//     </>
-//   );
-// }
-
 export default function Portfolio() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#ececec]">
@@ -359,8 +197,6 @@ export default function Portfolio() {
       <ExperienceTimeline />
       <SkillCard />
       <SocialConnectSection />
-
-      {/* <ChatWidget /> */}
     </main>
   );
 }

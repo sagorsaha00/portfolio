@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const socials = [
   {
-    name: "WhatsApp x",
+    name: "WhatsApp",
     icon: FaWhatsapp,
     href: "https://wa.me/8801857681366",
     color: "hover:text-green-500",

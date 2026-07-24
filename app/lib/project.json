@@ -73,7 +73,7 @@
             "JWT Authentication"
         ],
         "live": "https://ele-books.vercel.app/",
-        "source": "https://github.com/sagorsaha00/Book_appoitment_backend_Server",
+        "source": "https://github.com/sagorsaha00/EleBooks.",
         "challenges": "Building role-based authentication, managing permissions for different users, and implementing the complete book approval workflow.",
         "futurePlans": "Add online payments, email notifications, book reviews, advanced search filters, and an AI-based book recommendation system."
     }

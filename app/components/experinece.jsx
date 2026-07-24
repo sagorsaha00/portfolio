@@ -9,7 +9,7 @@ const journeys = [
   {
     title: "Frontend Development",
     company: "React Ecosystem",
-    date: "2022 — Present",
+    date: "2023 — Present",
     icon: SiReact,
     glow: "shadow-cyan-500/30",
     border: "hover:border-cyan-400/40",
@@ -58,7 +58,7 @@ const journeys = [
     ],
   },
   {
-    title: "Study & Career Journey",
+    title: "Career Journey",
     company: "Daily Growth",
     date: "Current",
     icon: FaUserGraduate,
@@ -69,7 +69,6 @@ const journeys = [
     dot: "bg-orange-400",
     dotShadow: "shadow-[0_0_20px_#fb923c]",
     points: [
-      "Currently studying Degree 2nd Year while continuing programming learning.",
       "Managing a marketing job alongside development and self-learning.",
       "Learning consistently every day through projects, courses, and practical coding.",
     ],

@@ -9,6 +9,7 @@ import SkillCard from "./components/showSkill";
 import SocialConnectSection from "./components/contact";
 import FeaturedProjects from "./components/project";
 import Navbar from "./components/navbar";
+import Education from "./components/education";
 
 const heroWords = [
   "MERN Stack Developer",
@@ -195,6 +196,7 @@ export default function Portfolio() {
       <HeroSection />
       <FeaturedProjects />
       <ExperienceTimeline />
+      <Education></Education>
       <SkillCard />
       <SocialConnectSection />
     </main>

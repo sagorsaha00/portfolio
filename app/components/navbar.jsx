@@ -11,6 +11,7 @@ const links = [
   { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
   { name: "Contact", href: "#contact" },
+  { name: "Education", href: "#education" },
 ];
 
 export default function Navbar() {

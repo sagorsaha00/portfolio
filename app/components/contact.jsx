@@ -1,7 +1,12 @@
 "use client";
 
-import React from "react";
-import { FaWhatsapp, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaGithub,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const socials = [
   {
@@ -21,6 +26,18 @@ const socials = [
     icon: FaLinkedinIn,
     href: "https://linkedin.com/in/sagor-saha00",
     color: "hover:text-cyan-400",
+  },
+  {
+    name: "GitHub",
+    icon: FaGithub,
+    href: "https://github.com/sagorsaha00",
+    color: "hover:text-gray-300",
+  },
+  {
+    name: "Email",
+    icon: FaEnvelope,
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=sagorsaha.dev@gmail.com",
+    color: "hover:text-red-400",
   },
 ];
 
